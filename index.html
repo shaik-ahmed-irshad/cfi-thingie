@@ -1,686 +1,927 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" dir="ltr">
 
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>CFI - Influencers/fellowship</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Code For India Foundation</title>
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/cfi-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/cfi-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/cfi-logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/cfi-logo.png"> 
+    <!-- <link rel="manifest" href="assets/img/favicons/manifest.json"> -->
+    <!-- <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png"> -->
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css " />
 
-<body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bolder fs-2 fst-italic" href="#">
+            <div class="text-success">Code</div>
+            <div class="text-{light-blue}">For</div>
+            <div class="text-warning">India</div>
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+              <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="#">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#team">Team</a></li>
+              <li class="nav-item px-2"><a class="nav-link fw-medium" href="#perks">Perks </a></li>
+            </ul>
+            <form class="ps-lg-5">
+              <a class="btn btn-lg btn-primary rounded-pill bg-gradient order-0 " href="https://docs.google.com/forms/d/e/1FAIpQLSdsp-ZA9-SFoKA-buaQ0I6eTerVhk2JYAXKIrWUFtpcG0X40g/viewform" style="text-decoration: none ;" target="_blank" role="button">Apply</a>
+            </form>
+          </div>
         </div>
-        <!-- Spinner End -->
-
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><i class="fa fa-search me-2"></i>CFI <span class="fs-5">Code Influencers</span></h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
-                        <a href="#team" class="nav-item nav-link">Our Team</a>                        
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                    <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Apply Now</a>
-                </div>
-            </nav>
-
-            <div class="container-xxl py-5 bg-primary hero-header mb-5">
-                <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated zoomIn">All in one SEO tool need to grow your business rapidly</h1>
-                            <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
-                            <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Free Quote</a>
-                            <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid" src="img/hero.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </nav>
+      <section class="py-0" id="home">
+        <div class="bg-holder d-none d-sm-block" style="background-image:url(assets/img/illustrations/hero-bg.png);background-position:right top;background-size:contain;">
         </div>
-        <!-- Navbar & Hero End -->
+        <!--/.bg-holder-->
 
+        <div class="bg-holder d-sm-none" style="background-image:url(assets/img/illustrations/hero-bg.png);background-position:right top;background-size:contain;">
+        </div>
+        <!--/.bg-holder-->
 
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
+        <div class="container">
+          <div class="row align-items-center min-vh-75 min-vh-md-100">
+            <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
+              <div class="wrapper">
+              
+                <h1>Coding is</h1>
+                <div class="words">
+                    <span>fantastic</span>
+                    <span>interesting</span>
+                    <span>awesome</span>
+                    <span>incredible</span>
+                    <span>fantastic</span>
                 </div>
             </div>
-        </div>
-        <!-- Full Screen Search End -->
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">About Code Influencers</h6>
-                            <h2 class="mt-2">Become a Code Influencer!🧑🏻‍💻
-                            </h2>
-                        </div>
-                        <p class="mb-4">Amplify, Impact and Establish yourself as a Coder, Developer and a Leader in your community while developing the technical skills you need to grow.  </p>
-                        <div class="row g-3"><h5>Perks</h5>
-                            <div class="col-sm-12">
-                                <!-- <div class="col-sm-6"> -->
-                                    
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Access to weekly web3 meetups, Sessions, Workshops and etc</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Become a part of our exclusive coding community</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Build a community of coders at your campus</h6>
-                                <!-- <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6> -->
-                            </div>
-                            <div class="col-sm-6">
-                                
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="">Apply Now</a> 
-                            <!-- <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
-                    </div>
-                </div>
+              <!-- <h1 class="mt-6 mb-sm-4 display-2 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-8">Find your job better <br class="d-block d-lg-none d-xl-block" />and faster</h1> -->
+              <p class="mb-4 fs-1">Code For India Foundation. Promoting Code Literacy</p>
+              <div class="pt-1">
+               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsp-ZA9-SFoKA-buaQ0I6eTerVhk2JYAXKIrWUFtpcG0X40g/viewform" style="text-decoration: none ;" target="_blank" role="button"> <button class="btn btn-lg order-0 button-hero" >Apply</button></a>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- About End -->
+      </section>
+      <section class="py-5">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/bg.png);background-position:left top;background-size:initial;margin-top:-180px;">
+        </div>
+        <!--/.bg-holder-->
 
-
-        <!-- Newsletter Start -->
-        
-        <div class="container-xxl bg-primary newsletter my-5 wow fadeInUp" data-wow-delay="0.1s" >
-            <div class="container px-lg-5">
-                 <!-- About Start -->
-                <div class="container-xxl py-5">
-                    <div class="container px-lg-5">
-                        <div class="row g-7 align-items-center">
-                            <div class="col-lg-6 ">
-                                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/newsletter.png">
-                            </div>
-                            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="section-title position-relative mb-4 pb-2">
-                                    <h6 class="position-relative text-primary ps-4">About Fellowship</h6>
-                                    <h2 class="mt-2">Become a Fellow!🧑🏻‍💻
-                                    </h2>
-                                </div>
-                                <p class="mb-4 text-dark">
-                                    Code For India Fellows are individuals who believe code literacy is a strong way to build and equitable society and promote equal opportunities. A two-year long paid engagement that provides an opportunity to work as part-time instructors to train the low-income, under-resourced youth.</p>
-                                <div class="row g-3"><h5>Perks</h5>
-                                    <div class="col-sm-12">
-                                        <!-- <div class="col-sm-6"> -->
-                                            
-                                        <h6 class="mb-3"><i class="fa fa-quote-left text-primary me-2"></i>Access to weekly web3 meetups, Sessions, Workshops and etc</h6>
-                                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Become a part of our exclusive coding community</h6>
-                                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Build a community of coders at your campus</h6>
-                                        <!-- <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6> -->
-                                    </div>
-                                    <div class="col-sm-6">
-                                        
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center mt-4">
-                                    <a class="btn btn-primary rounded-pill px-4 me-3" href="">Apply Now</a> 
-                                    <!-- <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
-                                </div>
-                            </div>
+        <div class="container" id="perks">
+          <div class="row flex-center">
+            <div class="col-md-5 order-md-0 text-center text-md-start"><img class="img-fluid mb-4" src="assets/img/illustrations/pair-coding.png" width="450" alt="" /></div>
+            <div class="col-md-5 text-center text-md-start">
+              <h6 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm">Become a Code Influencer!🧑🏻‍💻<br /></h6>
+              <p class="my-4 pe-xl-8"> Amplify, Impact and Establish yourself as a Coder, Developer and a Leader in your community while developing the technical skills you need to grow.</p>
+              <div class="row g-3"><h5>Perks</h5>
+                <div class="col-sm-12">
+                    <!-- <div class="col-sm-6"> -->
                         
-                        </div>
-                    </div>
+                    <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Access to weekly web3 meetups, Sessions, Workshops and etc</h6>
+                    <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Become a part of our exclusive coding community</h6>
+                    <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Build a community of coders at your campus</h6>
+                    <!-- <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6> -->
+                </div>
+                <div class="col-sm-6">
+                    
                 </div>
             </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsp-ZA9-SFoKA-buaQ0I6eTerVhk2JYAXKIrWUFtpcG0X40g/viewform" style="text-decoration: none ;" target="_blank" role="button"> <button class="btn btn-lg order-0 button-hero" >Apply</button></a>
+          </div>
+          </div>
         </div>
-        <!-- About End -->
-                <!-- <div class="row align-items-center" style="height: 250px;">
-                    <div class="col-12 col-md-6">
-                        <h3 class="text-white">Ready to get started</h3>
-                        <small class="text-white">Diam elitr est dolore at sanctus nonumy.</small>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                        <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png">
-                    </div>
-                </div>
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0">
+
+        <div class="container">
+
+
+          <!-- ============================================-->
+          <!-- <section> begin ============================-->
+          <section class="py-4">
+
+            <div class="container">
+              <div class="row flex-center">                
+                <div class="col-md-5 order-md-1 text-center"><h5 class="fw-bold"> Perks of Fellowship</h5><img class="img-fluid mb-4" src="img/fellow.jpg" width="450" alt="" /></div>
+                <div class="col-md-5 text-center text-md-start">
+                  <h6 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm">Become a Fellow!🧑🏻‍💻</h6>
+                  <p class="my-4 pe-xl-8">A two-year long paid engagement that provides an opportunity to work as part-time instructors to train the low-income, under-resourced youth.</p>
+                  <div class="row g-3"></div>
+                    
+                  
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsp-ZA9-SFoKA-buaQ0I6eTerVhk2JYAXKIrWUFtpcG0X40g/viewform" style="text-decoration: none ;" target="_blank" role="button"> <button class="btn btn-lg order-0 button-hero" >Apply</button></a>
+              </div>
+              </div>
             </div>
-        </div> -->
-        <!-- Newsletter End -->
+            <!-- end of .container-->
+          </section>
+          <!-- <section> close ============================-->
+          <!-- ============================================-->
 
 
-        <!-- Service Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Services</h6>
-                    <h2 class="mt-2">What Solutions We Provide</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">SEO Optimization</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Web Design</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Social Media Marketing</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">Email Marketing</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">PPC Advertising</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fa fa-home fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">App Development</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Service End -->
-
-
-        <!-- Portfolio Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Projects</h6>
-                    <h2 class="mt-2">Recently Launched Projects</h2>
-                </div>
-                <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="col-12 text-center">
-                        <ul class="list-inline mb-5" id="portfolio-flters">
-                            <li class="btn px-3 pe-4 active" data-filter="*">All</li>
-                            <li class="btn px-3 pe-4" data-filter=".first">Design</li>
-                            <li class="btn px-3 pe-4" data-filter=".second">Development</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row g-4 portfolio-container">
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                    <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Portfolio End -->
-
-
-        <!-- Testimonial Start -->
-        <!-- <div class="container-xxl bg-primary testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Testimonial End -->
-
-
-        <!-- Team Start -->
-        <div class="container-xxl py-5" id="team">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Team</h6>
-                    <h2 class="mt-2">Meet Our Team</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-75" src="img/Meraj.jpg.jpeg" alt="">
-                            </div>
-                            <div class="px-5 py-2">
-                                <h5 class="fw-bold m-0">Meraj Faheem</h5>
-                                <small>Founder & CEO, Code For India Foundation</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-75" src="img/" alt="">
-                            </div>
-                            <div class="px-5 py-2">
-                                <h5 class="fw-bold m-0">Sadiya Sabera</h5>
-                                <small>Program Manager</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-75" src="img/Akhil.jpeg" alt="">
-                            </div>
-                            <div class="px-5 py-2">
-                                <h5 class="fw-bold m-0">Akhil Teja</h5>
-                                <small>Program Lead</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-75" src="img/Ilyas.jpeg" alt="">
-                            </div>
-                            <div class="px-5 py-2">
-                                <h5 class="fw-bold m-0">Ilyas Shah Khan</h5>
-                                <small>Program Manager</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-75" src="img/Aafreen.jpg.jpeg" alt="">
-                            </div>
-                            <div class="px-5 py-2">
-                                <h5 class="fw-bold m-0">Yousuf Aafreen</h5>
-                                <small>Program Manager</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-75" src="img/Adnan.jpg.jpeg" alt="">
-                            </div>
-                            <div class="px-5 py-2">
-                                <h5 class="fw-bold m-0">Adnan Ali Khan</h5>
-                                <small>Program Lead</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-75" src="img/Hajera.jpg.jpeg" alt="">
-                            </div>
-                            <div class="px-5 py-2">
-                                <h5 class="fw-bold m-0">Hajira Zia</h5>
-                                <small>Designer</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-75" src="img/Rabiya.jpg.jpeg" alt="">
-                            </div>
-                            <div class="px-5 py-2">
-                                <h5 class="fw-bold m-0">Rabiya Nooreen</h5>
-                                <small>Designer</small>
-                            </div>
-                        </div>
-                    </div>           
-                </div>
-            </div>
         </div>
-        <!-- Team End -->
-        
+        <!-- end of .container-->
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s" id="contact">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Project Gallery</h5>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                            <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+      <!-- <section class="py-5">
+        <div class="bg-holder d-none d-sm-block" style="background-image:url(assets/img/illustrations/category-bg.png);background-position:right top;background-size:200px 320px;">
         </div>
-        <!-- Footer End -->
+         --------(/.bg-holder)----------
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-6 text-center mb-3">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Browse jobs by category</h5>
+              <p class="mb-5">Choose from the list of most popular categories</p>
+            </div>
+          </div>
+          <div class="row flex-center h-100">
+            <div class="col-10 col-xl-9">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-4 shadow-sm h-100 hover-top">
+                    <div class="text-center"> <img src="assets/img/illustrations/finance.png" height="120" alt="" />
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Accounting</h6>
+                        <p class="mb-0 card-text">100 open position</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-4 shadow-sm h-100 hover-top">
+                    <div class="text-center"> <img src="assets/img/illustrations/design.png" height="120" alt="" />
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Design/Creative</h6>
+                        <p class="mb-0 card-text">100 open position</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-4 shadow-sm h-100 hover-top">
+                    <div class="text-center"> <img src="assets/img/illustrations/programmer.png" height="120" alt="" />
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Programmer</h6>
+                        <p class="mb-0 card-text">100 open position</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-4 shadow-sm h-100 hover-top">
+                    <div class="text-center"> <img src="assets/img/illustrations/production.png" height="120" alt="" />
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Production</h6>
+                        <p class="mb-0 card-text">100 open position</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-4 shadow-sm h-100 hover-top">
+                    <div class="text-center"> <img src="assets/img/illustrations/education.png" height="120" alt="" />
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Education</h6>
+                        <p class="mb-0 card-text">100 open position</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 pb-lg-6 px-lg-4 pb-4">
+                  <div class="card py-4 shadow-sm h-100 hover-top">
+                    <div class="text-center"> <img src="assets/img/illustrations/consultancy.png" height="120" alt="" />
+                      <div class="card-body px-2">
+                        <h6 class="fw-bold fs-1 heading-color">Consultancy</h6>
+                        <p class="mb-0 card-text">100 open position</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+      <!-- ============================================-->
+  <!-- <section> begin ============================-->
+    <section class="py-1">
+
+      <div class="container">
+        <div class="row flex-center">
+          <!-- <div class="col-md-5 order-md-1 text-center text-md-end"><img class="img-fluid mb-4" src="assets/img/illustrations/feature.png" width="450" alt="" /></div> -->
+          <div class=" text-center text-md-start">
+            <h6 class="fw-bold fs-2 fs-lg-3 display-3 lh-sm">Reason Behind Code For India Foundation</h6>
+            <p class=""><br>
+              Code For India is a Hyderabad based not-for-profit organisation, 
+              established in April 2021, to deliver world-class,
+              industry-focused, high-quality tech programs targeted towards
+              youth from marginalized/low-income families, with a special
+              focus on women. <br><br>
+              Code For India Foundation is a setup by the makers of The Hacking School,
+              India's first coding bootcamp after having observed the need to deliver
+              high-quality tech education, designed keeping in mind the challenges and
+              opportunities, primarily for the marginalized strata of society.
+              The Hacking School pioneered the concept of coding bootcamp for India,
+              and delivered hundreds of bootcamp and graduated thousands of
+              students, with a remarkable success rate* of more than 95% over the past
+              7+ years.<br><br>
+              Code For India Foundation leverages the experience and expertise of The
+              Hacking School and Code.in through it's Programs and Products. The
+              Hacking School programs and products are designed for everyone,
+              ranging from beginners and amateurs to corporates and professionals.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+ <!-- Team Start -->
+ <div class="container-xxl py-5" id="team">
+  <div class="container px-lg-5 " >
+      <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+      
+          <h2 class="mt-2">Meet Our Team</h2>
+      </div>
+      <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item">
+                  <div class="d-flex">
+                    <div class=" d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                     
+                  </div>
+                      <img class="img-fluid rounded w-85" src="img/meraj.png" alt="">
+                  </div>
+                  <div class="  py-3 pic-text">
+                      <h5 class="fw-bold m-0">Meraj Faheem</h5>
+                      <small>Founder & CEO, Code For India Foundation</small>
+                  </div>    
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="team-item">
+                  <div class="d-flex">
+                    <div class=" d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                     
+                  </div>
+                      <img class="img-fluid rounded w-85" src="img/team-2.jpg" alt="">
+                  </div>
+                  <div class="px-4 py-3">
+                      <h5 class="fw-bold m-0">Sadiya Sabera</h5>
+                      <small>Program Manager</small>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+              <div class="team-item">
+                  <div class="d-flex">
+                    <div class=" d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                      
+                  </div>
+                      <img class="img-fluid rounded w-85" src="img/team-3.jpg" alt="">
+                  </div>
+                  <div class="px-4 py-3">
+                      <h5 class="fw-bold m-0">Akhil Teja</h5>
+                      <small>Program Lead</small>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+                <div class="d-flex">
+                  <div class=" d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                    
+                </div>
+                    <img class="img-fluid rounded w-85" src="img/ilyas.png" alt="">
+                </div>
+                <div class="px-4 py-3">
+                    <h5 class="fw-bold m-0">Ilyas Shah Khan</h5>
+                    <small>Program Manager</small>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+                <div class="d-flex">
+                  <div class=" d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                                    
+                </div>
+                    <img class="img-fluid rounded w-85" src="img/aafreen.png" alt="">
+                </div>
+                <div class="px-4 py-3">
+                    <h5 class="fw-bold m-0">Yousuf Aafreen</h5>
+                    <small>Program Lead</small>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+                <div class="d-flex">
+                  <div class=" d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                  
+                </div>
+                    <img class="img-fluid rounded w-85" src="img/adnan.png" alt="">
+                </div>
+                <div class="px-4 py-3">
+                    <h5 class="fw-bold m-0">Adnan Ali Khan</h5>
+                <small>Designer</small>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="d-flex">
+                <div class=" d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                
+              </div>
+                  <img class="img-fluid rounded w-85" src="img/zia.png" alt="">
+              </div>
+              <div class="px-4 py-3">
+                  <h5 class="fw-bold m-0">Hajera Zia</h5>
+                  <small>Designer</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+              <div class="d-flex">
+                <div class=" d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                 
+              </div>                  
+                  <img class="img-fluid rounded w-85" src="img/rabiya.png" alt="">
+              </div>
+              <div class="px-4 py-3">
+                  <h5 class="fw-bold m-0">Rabiya Nooreen</h5>
+                  <small>Manager</small>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+              <div class="d-flex">
+                <div class=" d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
+                
+              </div>
+                  <img class="img-fluid rounded w-85" src="img/team-3.jpg" alt="">
+              </div>
+              <div class="px-4 py-3">
+                  <h5 class="fw-bold m-0">Noah Michael</h5>
+                  <small>Designer</small>
+              </div>
+            </div>
+          </div>              -->
     </div>
+  </div>
+</div>
+<!-- Team End -->
+<!-- =========================messs=================================== -->
+      
+    
+      <!-- ============================================-->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
+      <section class="py-0"><img class="w-100" src="assets/img/illustrations/come-on-join.png" alt="" />
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 text-center">
+              <h6 class="fw-bold fs-3 fs-lg-5 lh-sm">Wanna Join Us!?</h6>
+              <p>Just Apply as an Code Influencer or a Fellow :) </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+
+<!--       
+      <section class="py-8">
+        <div class="container-lg">
+          <div class="row flex-center">
+            <div class="col-md-11 col-lg-6 col-xl-4 col-xxl-5">
+              <h6 class="fs-3 fs-lg-4 lh-sm">Testimonials</h6>
+            </div>
+            <div class="col-lg-4 position-relative mt-n5 mt-md-n4"><a class="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a></div>
+          </div>
+          <div class="row flex-center">
+            <div class="col-xl-10 px-0">
+              <div class="carousel slide pt-6" id="carouselExampleDark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow-lg">
+                          <div class="card-span-img"><img src="assets/img/gallery/user-1.png" alt="" /></div>
+                          <div class="card-body d-flex flex-column flex-center py-6">
+                            <div class="my-4">
+                              <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"> </path>
+                                  </svg>
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow-lg">
+                          <div class="card-span-img"><img src="assets/img/gallery/user-2.png" alt="" /></div>
+                          <div class="card-body d-flex flex-column flex-center py-6">
+                            <div class="my-4">
+                              <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"> </path>
+                                  </svg>
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow-lg">
+                          <div class="card-span-img"><img src="assets/img/gallery/user-3.png" alt="" /></div>
+                          <div class="card-body d-flex flex-column flex-center py-6">
+                            <div class="my-4">
+                              <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"> </path>
+                                  </svg>
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow-lg">
+                          <div class="card-span-img"><img src="assets/img/gallery/user-1.png" alt="" /></div>
+                          <div class="card-body d-flex flex-column flex-center py-6">
+                            <div class="my-4">
+                              <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"> </path>
+                                  </svg>
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow-lg">
+                          <div class="card-span-img"><img src="assets/img/gallery/user-2.png" alt="" /></div>
+                          <div class="card-body d-flex flex-column flex-center py-6">
+                            <div class="my-4">
+                              <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"> </path>
+                                  </svg>
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow-lg">
+                          <div class="card-span-img"><img src="assets/img/gallery/user-3.png" alt="" /></div>
+                          <div class="card-body d-flex flex-column flex-center py-6">
+                            <div class="my-4">
+                              <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"> </path>
+                                  </svg>
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row h-100 m-lg-7 mx-3 mt-6 mx-md-4 my-md-7">
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow-lg">
+                          <div class="card-span-img"><img src="assets/img/gallery/user-1.png" alt="" /></div>
+                          <div class="card-body d-flex flex-column flex-center py-6">
+                            <div class="my-4">
+                              <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"> </path>
+                                  </svg>
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow-lg">
+                          <div class="card-span-img"><img src="assets/img/gallery/user-2.png" alt="" /></div>
+                          <div class="card-body d-flex flex-column flex-center py-6">
+                            <div class="my-4">
+                              <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"> </path>
+                                  </svg>
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-8 mb-md-0">
+                        <div class="card card-span h-100 shadow-lg">
+                          <div class="card-span-img"><img src="assets/img/gallery/user-3.png" alt="" /></div>
+                          <div class="card-body d-flex flex-column flex-center py-6">
+                            <div class="my-4">
+                              <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                  </svg>
+                                </li>
+                                <li class="list-inline-item me-0">
+                                  <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="28" height="26" fill="#FF974D" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"> </path>
+                                  </svg>
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="card-text text-center text-1000 px-4">I love Jobest, easy platform to use,fantasic staff and nothing but great results!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- ============================================-->
+
+      <section class="py-0 bg-primary-gradient">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/footer-bg.png);background-position:center;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+<!-- 
+        <div class="container">
+          <div class="row flex-center py-8">
+            <div class="col-lg-6 mb-4 text-center">
+              <h1 class="text-white">Get started now</h1>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+              <form class="row row-cols-lg-auto g-0 align-items-center">
+                <div class="col-9 col-lg-8">
+                  <label class="visually-hidden" for="colFormLabel">Username</label>
+                  <div class="input-group">
+                    <input class="rounded-end-0 form-control" id="colFormLabel" type="email" placeholder="email address" />
+                  </div>
+                </div>
+                <div class="col-3 col-lg-4">
+                  <button class="btn btn-primary rounded-start-0" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div> -->
+         
+         
+          <!-- <div class="row justify-content-lg-between">
+            <div class="col-6 col-sm-4 col-lg-auto mb-3">
+              <h5 class="mb-5 text-white">CATEGORIES </h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">IOS Developers</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Front-End Developers</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">UX Designers</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">UI Designers</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Content Writer</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Program &amp; Tech</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-auto mb-3">
+              <h5 class="mb-5 text-white">COMMUNITY </h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Events</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Blog</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Forum</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Podcast</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Affiliates</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Invite a Friend</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-auto mb-3">
+              <h5 class="mb-5 text-white">ABOUT </h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">About Us</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Partnerships</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Finance Experts</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Project Management</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Product Manager</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">The Team</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-auto mb-3">
+              <h5 class="mb-5 text-white">CONTACT </h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Contact Us</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Press Center</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">Careers</a></li>
+                <li class="mb-3"><a class="text-light text-decoration-none" href="#!">FAQ</a></li>
+              </ul>
+            </div>
+          </div> -->
+          
+          
+          <div class="row flex-center">
+            <div class="col-auto my-4">
+              <div class="container">
+              <h2>Connect With Us</h2><br>
+                <div class="social-icons">
+                    <!-- Facebook -->
+    
+                    <!-- Twitter -->
+                    <a class="btn btn-primary"  href="https://twitter.com/codeforindia_?lang=en" target="_blank" role="button"><i class="bi-twitter"></i></a>
+    
+                    <!-- Instagram -->
+                    <a class="btn btn-primary"  href="https://www.instagram.com/codeforindiafoundation/?utm_medium=copy_link" target="_blank" role="button"><i class="bi-instagram"></i></a>
+    
+                    <!-- Linkedin -->
+                    <a class="btn btn-primary"  href="https://www.linkedin.com/company/code-for-india-foundation" target="_blank" role="button"><i class="bi-linkedin"></i></a>
+    
+                    <!-- Whatsapp -->
+                    <a class="btn btn-primary"  href="https://wa.me/+918297309819" target="_blank" role="button"><i class="bi-whatsapp"></i></a>
+                    <a class="btn btn-primary"  href="mailto: team@codeforindia.com" target="_blank" role="button"><i class="bi-envelope"></i></a>
+                </div>                
+              </div>              
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-auto mb-2">
+                <p class="mb-0 fs--1 text-white my-2 text-center">&copy; Made with&nbsp;
+                  <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1F3A63" viewBox="0 0 16 16">
+                    <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+                  </svg>&nbsp;for&nbsp;<a class="text-white" href="https://codeforindia.com" target="_blank">India </a>
+                </p>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap" rel="stylesheet">
+  </body>
 
 </html>
